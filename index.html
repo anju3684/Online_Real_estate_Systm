@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Home</title>
     <meta name="description" content="HomeDome Properties is one of the state’s most valuable and admired real estate development corporatiuon. HomeDome has shaped new lifestyles with a focus on design excellence, build quality and timely delivery.">
-    
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i">
     <link rel="stylesheet" href="fonts/fontawesome-all.min.css">
     <link rel="stylesheet" href="fonts/font-awesome.min.css">
@@ -14,10 +14,9 @@
     <link rel="stylesheet" href="fonts/fontawesome5-overrides.min.css">
     <link rel="stylesheet" href="css/Contact-Form-Clean.css">
     <link rel="stylesheet" href="css/Footer-Basic.css">
-    <link rel="stylesheet" href="css/Navigation-with-Button.css">
+      <link rel="stylesheet" href="css/Navigation-with-Button.css">
     <link rel="stylesheet" href="css/Registration-Form-with-Photo.css">
     <link rel="stylesheet" href="css/smoothproducts.css">
-     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
 </head>
 <body>
     <nav class="navbar navbar-light navbar-expand-md">
@@ -25,12 +24,12 @@
             <div class="collapse navbar-collapse"
                 id="navcol-1" style="width: 800px;">
                 <ul class="nav navbar-nav mx-auto">
-                    <li class="nav-item" role="presentation"><a class="nav-link active" href="home.html">Home</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="features.html">Features</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="about.html">About-us</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="pricing.html">Pricing</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="contact-us.html">Contact-us</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="featured.html">Featured</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link active" href="/home">Home</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="/features">Features</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="/about">About-us</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="/pricing">Pricing</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="/contact-us">Contact-us</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="/featured">Featured</a></li>
                 </ul>
                 <ul class="nav navbar-nav">
                     <li class="nav-item" role="presentation"><a class="nav-link active" href="/register">Sign-up</a></li>
@@ -46,7 +45,12 @@
     <div class="text">
         <h2>See the good in the World</h2>
         <p align="center-justified">HomeDome Properties is one of the world’s most valuable and admired real estate development companies. With proven competencies in properties.HomeDome shapes new lifestyles with a focus on design,excellence, build quality and timely delivery.</p><button class="btn btn-outline-light btn-lg" type="button" onclick="learn()">Learn More</button></div>
- 
+    <script>
+        function learn()
+        {
+            window.location.replace("about-us.html");
+        }
+    </script>
 </section>
         <section class="clean-block clean-info dark">
             <div class="container">
@@ -61,7 +65,12 @@
                         <div class="getting-started-info">
                             <p class="text-justify">Warm golden sands. A plaza full of unique experiences. And a boutique Vida hotel. These are just some of the discoveries that will capture your heart at SURF. A magical place where family living feels like a never-ending holiday.</p>
                         </div><button class="btn btn-outline-primary btn-lg" type="button" onclick="join()">Join Now</button>
-</div>
+<script>
+function join()
+    {
+        window.location.replace("registration.html");
+    }
+</script></div>
                 </div>
             </div>
         </section>
@@ -113,7 +122,12 @@
                 </div>
             </div>
             <div class="form-group text-center" style="margin-top: 35px;"><button class="btn btn-primary" type="button" onclick="featured()">Featured Properties</button>
-</div>
+<script>
+    function featured()
+    {
+        window.location.replace("featured.html");
+    }
+</script></div>
         </section>
         <section class="clean-block about-us">
             <div class="container">
@@ -125,14 +139,26 @@
                     <div class="col-sm-6 col-lg-4">
                         <div class="card clean-card text-center"><img class="card-img-top w-100 d-block" src="img/service.jpg">
                             <div class="card-body info">
-                                <h4 class="card-title">Anjali Shah</h4>
+                                <h4 class="card-title">Devang Parekh</h4>
                                 <p class="card-text">Founder-CEO</p>
                                 <div class="icons"><a href="#"><i class="icon-social-facebook"></i></a><a href="#"><i class="icon-social-instagram"></i></a><a href="#"><i class="icon-social-twitter"></i></a></div>
                             </div>
                         </div>
                     </div>
-                    
-                            
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="card clean-card text-center"><img class="card-img-top w-100 d-block" src="img/service.jpg">
+                            <div class="card-body info">
+                                <h4 class="card-title">Ankitsinh Parmar</h4>
+                                <p class="card-text">Co-Founder-CTO</p>
+                                <div class="icons">
+                                <a href="#"><i class="icon-social-facebook"></i>
+                                </a>
+                                <a href="https://www.instagram.com/so.parmar_ankit1999/"><i class="icon-social-instagram"></i>
+                                </a>
+                                <a href="#"><i class="icon-social-twitter"></i></a>
+                            </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -183,10 +209,12 @@
             </div>
         </div>
         <div class="footer-copyright"><p>&copy;  2019 HomeDome All Rights Reserved.&reg;</p>
-            <p>Anjali Shah</p>
+            <p>Devang Parekh &  Ankit Parmar Productions</p>
         </div>
     </footer>
-    
+        <script src="js/smart-forms.min.js"></script>
+       <script src="js/smoothproducts.min.js"></script>
+    <script src="js/theme.js"></script>
 </ body>
 
 </html>
